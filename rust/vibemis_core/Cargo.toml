@@ -1,0 +1,22 @@
+[package]
+name = "vibemis_core"
+version = "0.1.0"
+edition = "2021"
+description = "Pure Rust streaming protocol core, Android NDK Media/Audio/Sensors pipeline, and JNI bridge for Vibemis"
+license = "GPL-3.0"
+
+[lib]
+name = "vibemis_core"
+crate-type = ["cdylib", "rlib"]
+
+[features]
+default = ["api-level-29"]
+api-level-26 = []
+api-level-29 = ["api-level-26"]
+
+[profile.release]
+opt-level = 3
+lto = "fat"
+codegen-units = 1
+panic = "abort"
+strip = "symbols"

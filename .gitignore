@@ -1,0 +1,81 @@
+# Built application files
+*.apk
+*.ap_
+*.aab
+*.aar
+*.dex
+*.class
+build/
+**/build/
+out/
+dist/
+captures/
+.externalNativeBuild/
+.cxx/
+output.json
+output-metadata.json
+baselineProfiles/
+
+# Gradle & Kotlin caches / local config
+.gradle/
+.kotlin/
+local.properties
+gradle-app.setting
+!gradle/wrapper/gradle-wrapper.jar
+!gradle/wrapper/gradle-wrapper.properties
+
+# Signing keys & secrets
+*.jks
+*.keystore
+key/
+keystore.properties
+signing.properties
+.env
+.env.*
+
+# Rust / Cargo / JNI build artifacts
+rust/**/target/
+target/
+**/jniLibs/
+*.so
+*.rlib
+*.rmeta
+*.d
+
+# IDEs & editors
+.idea/
+*.iml
+*.ipr
+*.iws
+.vscode/
+.fleet/
+.eclipse/
+.settings/
+.project
+.classpath
+
+# Logs, heap dumps, backups & temp files
+*.hprof
+*.log
+*.trace
+*~
+*.swp
+*.swo
+*.bak
+*.tmp
+*.orig
+
+# OS metadata
+.DS_Store
+.AppleDouble
+.LSOverride
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$Recycle.Bin/
+
+# AI / scratch directories
+.agent/
+.claude/
+.cursor/
+anti-slop/

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<full-backup-content>
+    <!-- Don't sync preferences, pairing keys/certs, or host database across devices -->
+    <exclude domain="sharedpref" path="."/>
+    <exclude domain="file" path="client.key"/>
+    <exclude domain="file" path="client.crt"/>
+    <exclude domain="database" path="computers4.db"/>
+    <exclude domain="database" path="computers4.db-wal"/>
+    <exclude domain="database" path="computers4.db-shm"/>
+    <exclude domain="database" path="computers4.db-journal"/>
+</full-backup-content>
